@@ -31,6 +31,7 @@ class Custom
     options = {
       :filename=>@file_name,
       :filetype=>"svg",
+      :attributes=>["foreign_keys", "primary_keys", "content"],
       :only=>@classes
     }
     file = RailsERD::Diagram::Graphviz.create(options)
